@@ -1,0 +1,38 @@
+// Variables For Font
+$font-primary:'EB Garamond', serif, sans-serif;
+// Variables For Colors
+$color-white:#fff;
+$color-green-1:#e2faff;
+$color-green-dark:#41f3f2;
+$color-grey:#808080;
+$color-grey-light:#D3D3D3;
+$color-dark-yellow:#e1ad01;
+$color-light-yellow:#c69f26;
+
+// Basic Style
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    margin: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: $font-primary;
+    line-height: 1.5;
+}
+.container{
+    display: grid;
+    grid-template-rows: 35rem 7rem 20rem 50rem;
+    grid-template-columns: 5rem repeat(9, 1fr) 10rem;
+}
+.image{
+    height: 2.25rem;
+    width: 5rem;
+    fill: var(--color-grey)
+}

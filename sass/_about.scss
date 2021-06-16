@@ -1,0 +1,36 @@
+.about{
+    grid-column: 1 /span 3 ;
+    grid-row: 2 / span 5 ;
+    padding-left: 5rem;
+    border-right: 1px solid $color-grey-light;
+    
+    &__family,
+    &__me{
+        &--heading{
+            margin-top: 7rem;
+            font-size:2rem;
+            color: #000;
+            text-transform: uppercase;
+            border-bottom: 1px solid $color-grey-light;
+        }
+        &--text{
+            text-transform: uppercase;
+            margin-top: 2rem;
+            font-size: 1.5rem;
+            color: $color-grey;
+        }
+        &--info{
+            font-size: 2rem;
+            color: #000;
+        }
+    }
+    &__image{
+        &--photo{
+            margin-top: 1rem;
+            width:7rem;
+            display:inline-block;
+            border-radius: 50%;
+            padding: 3px;
+        }
+    }
+}

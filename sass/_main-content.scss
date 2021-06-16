@@ -1,0 +1,95 @@
+.main-content {
+  grid-column: 4 / 9;
+  grid-row: 4 / 4;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  
+  &__contribution {
+    display: flex;
+    height: 15rem;
+    background-color: $color-white;
+    padding: 2rem;
+    box-shadow: 0px 0px 62px -22px rgba(0, 0, 0, 0.3);
+    align-content: center;
+    justify-content: center;
+
+    &--money {
+      background-color: $color-green-1;
+      width: 20rem;
+      font-size: 5.5rem;
+
+      p {
+        text-align: center;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+
+    &__Status {
+      width: 100%;
+      padding-left: 2rem;
+      &--heading {
+        font-size: 3rem;
+        font-weight: 200;
+      }
+      &--status {
+       &-img{
+          height: 1.2rem;
+          width: 1.2rem;
+       }
+        span {
+          color: $color-grey;
+        }
+        color: $color-grey-light;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__others {
+    
+    &--title{
+        margin-top: 2rem;
+        font-size: 2rem;
+        color: $color-grey;
+        text-transform: uppercase;
+    }
+
+    &__other {
+        margin-top: 2rem;
+        background-color: $color-white;
+    box-shadow: 0px 0px 62px -22px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 2rem;
+
+      &--image {
+        margin-top: 1rem;
+        width: 8rem;
+        border-radius: 50%;
+        padding-left: 5px;
+        height: 8rem;
+        margin-bottom: 1rem;
+      }
+      &__head {
+        padding-left: 1rem;
+
+        &--heading {
+          font-size: 2.5rem;
+        }
+
+        &--text {
+          color: $color-grey;
+          font-size: 1.5rem;
+          word-spacing: 3px;
+        }
+      }
+      &--payment {
+        color: $color-green-dark;
+        font-size: 5rem;
+        padding-left: 25rem;
+      }
+    }
+  }
+}

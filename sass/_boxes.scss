@@ -1,0 +1,54 @@
+.boxes {
+  // background-color: $color-grey-light;
+  grid-column: 4 / -1;
+  column-gap: 1rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  height: 15rem;
+
+  &__box {
+    width: 30%;
+    background-color: $color-white;
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    box-shadow: 0px 0px 62px -22px rgba(0, 0, 0, 0.3);
+
+    &--icon {
+      height: 10rem;
+      width: 10rem;
+      fill: #c69f26;
+      margin-left: -2rem;
+    }
+
+    &--image {
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+    &__payDet {
+      border-left: 0.1rem dashed red;
+      padding-left: 1rem;
+
+      &--heading {
+        font-size: 2rem;
+        color: $color-grey;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      &--text {
+        color: #000;
+        font-size: 3.5rem;
+        font-weight: 600;
+      }
+
+      &--date {
+        color: $color-grey;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
